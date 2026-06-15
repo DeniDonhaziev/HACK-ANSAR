@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "PharmaCRM",
+    "slug": "pharma-crm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0D47A1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Геолокация используется для подтверждения визитов и построения маршрутов",
+        "NSLocationAlwaysUsageDescription": "Геолокация используется для контроля маршрута медпредставителя"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D47A1",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Геолокация для подтверждения визитов"
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
